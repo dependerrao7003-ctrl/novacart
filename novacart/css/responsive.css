@@ -1,0 +1,214 @@
+/* ==========================================================================
+   NovaCart — responsive.css
+   Mobile-first adjustments layered on top of style.css / components.css.
+   Breakpoints: 1024px (laptop), 768px (tablet), 480px (mobile), 360px (small)
+   ========================================================================== */
+
+/* ---------- 1024px — Laptop ---------- */
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-us-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ---------- 768px — Tablet ---------- */
+@media (max-width: 768px) {
+    :root {
+        --header-height: 68px;
+    }
+
+    /* Mobile navigation */
+    .nav-links {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        background-color: var(--surface-color);
+        border-bottom: 1px solid var(--border-color);
+        flex-direction: column;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.25s ease;
+    }
+
+    .nav-links.open {
+        max-height: 320px;
+    }
+
+    .nav-links a {
+        padding: var(--space-4) var(--space-5);
+        width: 100%;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-links a.active::after {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .hero .container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-visual {
+        order: -1;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    .details-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .details-visual {
+        position: static;
+        font-size: 5rem;
+    }
+
+    .cart-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-card {
+        position: static;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+
+    .why-us-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---------- 480px — Mobile ---------- */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--space-4);
+    }
+
+    section {
+        padding: var(--space-7) 0;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-3);
+    }
+
+    .product-actions {
+        flex-direction: column;
+    }
+
+    .toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group {
+        justify-content: space-between;
+    }
+
+    .filter-group select {
+        flex: 1;
+    }
+
+    .cart-item {
+        grid-template-columns: 64px 1fr;
+        grid-template-areas:
+            "visual name"
+            "visual qty"
+            "visual subtotal";
+        row-gap: var(--space-2);
+    }
+
+    .cart-item-visual { grid-area: visual; width: 64px; height: 64px; font-size: 1.6rem; }
+    .cart-item-info { grid-area: name; }
+    .qty-stepper { grid-area: qty; }
+    .cart-item-subtotal { grid-area: subtotal; }
+    .remove-btn { position: absolute; top: var(--space-3); right: var(--space-3); }
+    .cart-item { position: relative; }
+
+    .about-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .payment-options {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .details-purchase-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/* ---------- 360px — Small Mobile ---------- */
+@media (max-width: 360px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+}

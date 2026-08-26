@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — NovaCart</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">Nova<span>Cart</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="cart.html" class="cart-link" aria-label="View cart">
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<div class="page-header">
+    <div class="container">
+        <span class="eyebrow">Our Story</span>
+        <h1>About NovaCart</h1>
+        <p>Built to make everyday online shopping simpler, faster, and more enjoyable.</p>
+    </div>
+</div>
+
+<section style="padding-top: 0;">
+    <div class="container">
+        <div class="about-stats">
+            <div class="stat-card">
+                <div class="stat-number">16+</div>
+                <div class="stat-label">Products Listed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Categories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4.3★</div>
+                <div class="stat-label">Average Rating</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Frontend Demo</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="padding-top: 0;">
+    <div class="container" style="max-width: 760px;">
+        <h2 style="margin-bottom: var(--space-4);">Our Mission</h2>
+        <p style="color: var(--text-muted); margin-bottom: var(--space-6);">
+            NovaCart was created to bring together everyday essentials — electronics, fashion,
+            accessories, home goods and beauty products — into one clean, easy-to-use store.
+            We believe shopping online should feel effortless: quick to search, simple to filter,
+            and clear at checkout, with no unnecessary steps in between.
+        </p>
+    </div>
+</section>
+
+<section style="padding-top: 0;">
+    <div class="container">
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">Why NovaCart</span>
+                <h2>Why Choose Us</h2>
+            </div>
+        </div>
+        <div class="why-us-grid">
+            <div class="why-card">
+                <div class="why-icon">⚡</div>
+                <h3 style="font-size:1.05rem; margin-bottom: var(--space-2);">Fast & Simple</h3>
+                <p style="color: var(--text-muted); font-size: 0.92rem;">Search, filter, and sort your way to the right product in seconds.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">🔒</div>
+                <h3 style="font-size:1.05rem; margin-bottom: var(--space-2);">Clear Checkout</h3>
+                <p style="color: var(--text-muted); font-size: 0.92rem;">Transparent pricing with no hidden fees — see your total before you order.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-icon">💬</div>
+                <h3 style="font-size:1.05rem; margin-bottom: var(--space-2);">Customer Focused</h3>
+                <p style="color: var(--text-muted); font-size: 0.92rem;">Every design choice is built around making shopping easier for you.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-bottom">© 2026 NovaCart. All rights reserved.</div>
+    </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

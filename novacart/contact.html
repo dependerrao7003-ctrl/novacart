@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — NovaCart</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">Nova<span>Cart</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="cart.html" class="cart-link" aria-label="View cart">
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<div class="page-header">
+    <div class="container">
+        <h1>Get in Touch</h1>
+        <p>Questions, feedback, or just want to say hi? Send us a message.</p>
+    </div>
+</div>
+
+<section style="padding-top: 0;">
+    <div class="container">
+        <div class="contact-layout">
+            <div class="contact-info-card">
+                <h3>Contact Information</h3>
+                <div class="contact-info-row">
+                    <span class="icon">📍</span>
+                    <span>123 Market Street, Panipat, Haryana, India</span>
+                </div>
+                <div class="contact-info-row">
+                    <span class="icon">✉️</span>
+                    <span>support@novacart.example</span>
+                </div>
+                <div class="contact-info-row">
+                    <span class="icon">📞</span>
+                    <span>+91 98765 43210</span>
+                </div>
+                <div class="contact-info-row">
+                    <span class="icon">🕐</span>
+                    <span>Mon–Sat, 9:00 AM – 7:00 PM</span>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <div id="contactSuccess" class="empty-state" style="display:none; padding: var(--space-6) 0;">
+                    <div class="empty-icon">✅</div>
+                    <h3>Message Sent</h3>
+                    <p>Your message has been submitted successfully.</p>
+                </div>
+
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <label for="contactName">Name</label>
+                        <input type="text" id="contactName" name="name" placeholder="Your name">
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email</label>
+                        <input type="email" id="contactEmail" name="email" placeholder="you@example.com">
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject">Subject</label>
+                        <input type="text" id="contactSubject" name="subject" placeholder="How can we help?">
+                        <div class="error-message"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" name="message" placeholder="Write your message here..."></textarea>
+                        <div class="error-message"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-bottom">© 2026 NovaCart. All rights reserved.</div>
+    </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
